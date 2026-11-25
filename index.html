@@ -394,37 +394,51 @@
 
             <h3>Send a Message</h3>
 
-            <form action="mailto:singhrajpreet09876@gmail.com"
-                  method="post"
-                  enctype="text/plain">
+            <form id="contact-form">
 
-                <input
-                    type="text"
-                    name="Name"
-                    placeholder="Your Name"
-                    required
-                >
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        data-fs-field
+    >
 
-                <input
-                    type="email"
-                    name="Email"
-                    placeholder="Your Email"
-                    required
-                >
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        data-fs-field
+    >
 
-                <textarea
-                    name="Message"
-                    rows="5"
-                    placeholder="Your Message"
-                    required
-                ></textarea>
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required
+        data-fs-field
+    >
 
-                <button type="submit">
-                    Send Message &rarr;
-                </button>
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="6"
+        required
+        data-fs-field
+    ></textarea>
 
-            </form>
+    <div data-fs-success>
+        Message sent successfully! Thank you for contacting me.
+    </div>
 
+    <div data-fs-error></div>
+
+    <button type="submit" data-fs-submit-btn>
+        Send Message →
+    </button>
+
+</form>
         </div>
 
     </div>
@@ -460,6 +474,7 @@
 
 
 <script src="script.js"></script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </body>
 </html>
