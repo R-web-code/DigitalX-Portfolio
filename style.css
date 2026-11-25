@@ -961,3 +961,18 @@ header {
     }
 
 }
+.brand-line {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #aab4c5;
+    letter-spacing: 1px;
+}
+
+.brand-line span {
+    color: #00aaff;
+    font-weight: 600;
+}
+.footer-brand {
+    color: #00aaff;
+    font-weight: 600;
+}
