@@ -884,7 +884,6 @@ body {
         margin-top: 0 !important;
     }
 }
-css
 /* PREMIUM ANIMATIONS */
 
 @keyframes float {
@@ -1128,4 +1127,48 @@ css
 .project-icon {
     display: inline-block;
     transition: transform 0.3s ease;
+}
+/* Mobile Navigation Menu */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: #080d19;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
