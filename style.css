@@ -1172,3 +1172,21 @@ body {
         margin: 10px 0;
     }
 }
+/* Project Button */
+.project-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #00aaff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
